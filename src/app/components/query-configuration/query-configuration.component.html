@@ -1,0 +1,11 @@
+<!-- {{dcubes}} -->
+<!-- <div style="float: right;">
+    <button [disabled]="!showGrid" (click)="showGrid=false">Destroy Grid</button>
+    <button [disabled]="showGrid" (click)="showGrid=true">Create Grid</button>
+</div>
+ -->
+<!-- <button (click)="getMeta()">Get meta</button> -->
+    <cube-filter [cubes]="cubes | async" (selected)="onCubeSelection($event)"></cube-filter>
+<!-- <div *ngIf="cube"> -->
+    <query-form [cube]="cube | async" [filters] = "filters | async" (formSubmit)="onConfSubmit($event)"></query-form>
+<!-- </div> -->

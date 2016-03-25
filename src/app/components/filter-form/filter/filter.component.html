@@ -1,0 +1,11 @@
+<span (click)="toggleFilter()">{{filter.dimname}}</span>
+<div *ngIf="!filter.hidden">
+    <select #sel class="form-control" (change)="onTypeChange(sel.value)">
+        <option *ngFor="#tp of types" [value]="tp.cd" [selected]="tp.cd === filter.type">{{tp.label}}</option>
+    </select>
+    <div style="height: 200px; width: 50%; overflow: auto; border: solid 1px black">
+        <div *ngFor="#opt of filter.options">
+            <input type="checkbox" [checked]="opt.checked" (change)="onOptionChange(opt)" /> {{opt.cd}}
+        </div>
+    </div>
+</div>

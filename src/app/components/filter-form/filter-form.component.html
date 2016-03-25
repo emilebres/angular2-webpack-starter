@@ -1,0 +1,6 @@
+<label for="filters">Filters</label>
+<ul>
+    <div *ngFor="#flt of filters">
+            <flt-comp [filter]="flt" (toggle)="onToggleFilter($event)" (typeChange)="onTypeChange($event)" (optionCheck)="onOptionCheck($event)"></flt-comp>
+    </div>
+</ul>

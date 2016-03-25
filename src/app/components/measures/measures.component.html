@@ -1,0 +1,5 @@
+<label for="measures">Measures</label>
+<ul>
+    <li *ngFor="#mea of measures">{{ mea.name }} <input type="checkbox" [checked]="mea.selected" (click)="selected(mea)" /></li>
+</ul>
+{{diagnostic}}

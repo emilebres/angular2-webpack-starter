@@ -1,0 +1,22 @@
+<label for="params">Parameters</label>
+<ul>
+    <li *ngFor="#prm of parameters">
+        <div [ngSwitch]="prm.tp">
+            {{ prm.name }}
+            <div *ngSwitchWhen="'date'">
+                <input type="date" value="{{prm.value | dashdate}}">
+            </div>
+            <div *ngSwitchWhen="'number'">
+                <select #box class="form-control" (change)="onChange(prm.id, box.value)">
+                    <option *ngFor="#opt of prm.options" [value]="opt.id" [selected]="opt.id === prm.value">{{opt.cd}}</option>
+                </select>
+            </div>
+            <div *ngSwitchWhen="'boolean'">
+            <input type="checkbox" [(ngModel)]="prm.value"/>
+<!--                 <input type="radio" name="{{ prm.name }} " [ngFormControl]="prm.value" (click)="prm.value='1h'" value="'1h'"> True
+                <input type="radio" name="{{ prm.name }} " [ngFormControl]="prm.value" (click)="prm.value='0h'" value="'0h'" checked> False
+ -->            </div>
+            <p *ngSwitchDefault>Unknown parameter type !!!</p>
+        </div>
+    </li>
+</ul>

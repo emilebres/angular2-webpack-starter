@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<ngrx-devtools></ngrx-devtools>
+<div style="width: 100%;">
+    <!-- <div style="padding: 4px; float: left; width: 33%"> -->
+        <query-config (confSubmit)="onQuerySubmit($event)"></query-config>
+    <!-- </div> -->
+    <!-- <div style="clear: both;"></div> -->
+    <!-- <div style="float: right; width: 77%"> -->
+    <!-- <div *ngIf="showGrid" style="float: right; width: 77%"> -->
+        <my-grid [grid]="grid | async"></my-grid>
+    <!-- </div> -->
+</div>

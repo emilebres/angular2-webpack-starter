@@ -1,0 +1,6 @@
+<div class="form-group">
+    <label for="cube">Cube</label>
+    <select #box class="form-control" (change)="onChange(box.value)">
+        <option *ngFor="#cub of cubes" [value]="cub.id">{{cub.name}}</option>
+    </select>
+</div>

@@ -1,0 +1,17 @@
+    <form (ngSubmit)="onFormSubmit()">
+            <div class="form-group">
+                <dim-comp [dimensions]="cube.dimensions" (dimClickMonitor)="onDimMonitor($event, 'click')" (dimExpandMonitor)="onDimMonitor($event, 'expand')"></dim-comp>
+            </div>
+            <div class="form-group">
+                <mea-comp [measures]="cube.measures" (select)="onMeasureSelection($event)"></mea-comp>
+            </div>
+            <div class="form-group">
+                <prm-comp [parameters]="cube.parameters" (parameterChange)="onParameterChange($event)"></prm-comp>
+            </div>
+            <div class="form-group">
+                <flts-comp [filters]="filters" (typeChange)="onFilterTypeChange($event)" (optionCheck)="onFilterOptionCheck($event)"></flts-comp>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+<!-- <div>{{cubeDiagnostic}}</div>
+<div>{{filterDiagnostic}}</div> -->
