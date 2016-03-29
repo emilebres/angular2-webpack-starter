@@ -1,9 +1,9 @@
 <ul>
-    <li *ngFor="#dir of directories">
+    <li *ngFor="#dir of directories" style="list-style-type:none">
         <span class="iconButton" (click)="onExpand(dir.id)">{{dir.getIcon()}} {{ dir.name }} </span><input type="checkbox" [checked]="dir.checked" (click)="onClick(dir.id)" />
 	<!-- <div *ngIf="v.checked">{{v.name}} filter here !</div> -->
         <div *ngIf="dir.expanded">
-            <ul>
+            <ul style="list-style-type:none">
                 <li *ngFor="#p of dir.files">{{p}}</li>
             </ul>
             <tree-view [directories]="dir.directories" (clickMonitor)="onClick($event)" (expandMonitor)="onExpand($event)"></tree-view>

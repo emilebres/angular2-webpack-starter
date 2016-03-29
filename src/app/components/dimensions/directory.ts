@@ -23,6 +23,9 @@ export class Directory{
     }
 
     getIcon(){
+        if (this.directories.length === 0){
+            return ' ';
+        }
 
         if(this.expanded){
             return '-';

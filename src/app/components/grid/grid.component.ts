@@ -2,6 +2,8 @@ import {Component, OnInit, OnChanges, Input} from 'angular2/core';
 
 import {AgGridNg2} from 'ag-grid-ng2/main';
 import {GridOptions} from 'ag-grid/main';
+import 'ag-grid/dist/styles/ag-grid.css';
+import 'ag-grid/dist/styles/theme-fresh.css';
 
 // import {DataService} from './data.service';
 import {ZebulonService} from '../../services/zebulon.service'
@@ -11,7 +13,7 @@ import {ZebulonService} from '../../services/zebulon.service'
 // import SkillFilter from './skillFilter';
 
 @Component({
-    selector: 'my-grid',
+    selector: 'grid',
     template: require('./grid.component.html'),
     styles: ['.toolbar button {margin: 2px; padding: 0px;}'],
     directives: [AgGridNg2],

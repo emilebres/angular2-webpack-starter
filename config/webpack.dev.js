@@ -81,6 +81,10 @@ module.exports = {
     // Make sure root is src
     root: helpers.root('src'),
 
+    alias: {
+            "ag-grid-root" : __dirname + "/node_modules/ag-grid"
+        }
+
   },
 
   // Options affecting the output of the compilation.
@@ -158,11 +162,10 @@ module.exports = {
       // See: https://github.com/webpack/json-loader
       {test: /\.json$/, loader: 'json-loader'},
 
-      // Raw loader support for *.css files
-      // Returns file content as string
+      // Using style-loader and css-loader to allow import 'css_file' in component
       //
-      // See: https://github.com/webpack/raw-loader
-      {test: /\.css$/, loader: 'raw-loader'},
+      // See: https://webpack.github.io/docs/stylesheets.html
+      {test: /\.css$/, loader: "style-loader!css-loader"},
 
       // Raw loader support for *.html
       // Returns file content as string
