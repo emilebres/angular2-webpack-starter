@@ -11,30 +11,21 @@ export const CHANGE_TYPE = 'CHANGE_TYPE';
 export const filters: Reducer<Filter[]> = (state = [], {type, payload}) => {
 	switch (type) {
 		case ADD_FILTERS:
-			// console.log('ADD_FILTERS');
-			// console.log(payload);
 			return payload;
 		case ADD_FILTER_OPTIONS:
-			// console.log('ADD_FILTER_OPTIONS');
-			// console.log(payload);
 			return state.map(flt =>
 				flt.id === payload.id ? Object.assign({}, flt, { options: payload.options, initialized: true }) : flt);
 		case TOGGLE_FILTER:
-			// console.log('TOGGLE_FILTER');
-			// console.log(payload);
 			return state.map(flt =>
 				flt.id === payload.id ? Object.assign({}, flt, { hidden: !payload.hidden }) : flt);
 		case TOGGLE_OPTION:
-			// console.log('TOGGLE_OPTION');
-			let i = state.indexOf(payload.filter);
-			return [...state.slice(0, i), Object.assign({}, payload.filter, {options: payload.options}), ...state.slice(i + 1)];
+			return state.map(flt =>
+				flt.id === payload.filter.id ? Object.assign({}, flt, {options: payload.options}) : flt)
+				// flt.id === payload.filter.id ? {...flt, options: payload.options }) : flt)
 		case CHANGE_TYPE:
-			let j = state.indexOf(payload.filter);
-			return [...state.slice(0, j), Object.assign({}, payload.filter, { type: payload.type }), ...state.slice(j + 1)];
+			return state.map(flt =>
+				flt.id === payload.filter.id ? Object.assign({}, flt, { type: payload.type }) : flt)
 		default:
-			// console.log('default');
-			// console.log(type);
-			// console.log(payload);
 			return state;
 	}
 }
