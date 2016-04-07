@@ -1,0 +1,515 @@
+{
+  "id": 0,
+  "code": "result",
+  "name": "Result",
+  "dimensions": [
+    {
+      "id": 0,
+      "code": "mkt",
+      "name": "Market",
+      "id_fth": null,
+      "id_root": 0,
+      "lv": 0,
+      "tp": "object",
+      "cd_obj": "ptf",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Market",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": true
+    },
+    {
+      "id": 1,
+      "code": "ptf_1",
+      "name": "Portfolio 1",
+      "id_fth": 0,
+      "id_root": 0,
+      "lv": 1,
+      "tp": "object",
+      "cd_obj": "ptf",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Market",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 2,
+      "code": "ptf_2",
+      "name": "Portfolio 2",
+      "id_fth": 1,
+      "id_root": 0,
+      "lv": 2,
+      "tp": "object",
+      "cd_obj": "ptf",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Market",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 3,
+      "code": "ptf_3",
+      "name": "Portfolio 3",
+      "id_fth": 2,
+      "id_root": 0,
+      "lv": 3,
+      "tp": "object",
+      "cd_obj": "ptf",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Market",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 4,
+      "code": "ptf_mkt",
+      "name": "Portfolio market",
+      "id_fth": 3,
+      "id_root": 0,
+      "lv": 4,
+      "tp": "object",
+      "cd_obj": "ptf",
+      "has_list": 1,
+      "dim_property": 1,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Market",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 5,
+      "code": "thp",
+      "name": "Thirdparty",
+      "id_fth": null,
+      "id_root": 5,
+      "lv": 0,
+      "tp": "object",
+      "cd_obj": "thp",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Thirdparty",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 6,
+      "code": "prod",
+      "name": "Product",
+      "id_fth": null,
+      "id_root": 6,
+      "lv": 0,
+      "tp": "object",
+      "cd_obj": "prd",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Product",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": true
+    },
+    {
+      "id": 7,
+      "code": "ntw",
+      "name": "Network",
+      "id_fth": 6,
+      "id_root": 6,
+      "lv": 1,
+      "tp": "object",
+      "cd_obj": "ntw",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Product",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": true,
+      "expanded": false
+    },
+    {
+      "id": 8,
+      "code": "tpo",
+      "name": "Trading point",
+      "id_fth": 7,
+      "id_root": 6,
+      "lv": 2,
+      "tp": "object",
+      "cd_obj": "tpo",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Product",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 9,
+      "code": "cur",
+      "name": "Currency",
+      "id_fth": null,
+      "id_root": 9,
+      "lv": 0,
+      "tp": "object",
+      "cd_obj": "cur",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Currency",
+      "dim_id_tp": 0,
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 10,
+      "code": "tp_dea",
+      "name": "Deal type",
+      "id_fth": null,
+      "id_root": 10,
+      "lv": 0,
+      "tp": "attribute",
+      "cd_obj": ".z_cub.d_tp_dea",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Deal type",
+      "dim_id_tp": 0,
+      "id_linked_table": "",
+      "cd_linked_table": "",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    },
+    {
+      "id": 11,
+      "code": "tp_res",
+      "name": "Result type",
+      "id_fth": null,
+      "id_root": 11,
+      "lv": 0,
+      "tp": "attribute",
+      "cd_obj": ".z_cub.d_tp_res",
+      "has_list": 1,
+      "dim_property": 0,
+      "is_visible": 1,
+      "n_xdec": null,
+      "query_type": "Result",
+      "hierarchy": "Result type",
+      "dim_id_tp": 0,
+      "id_linked_table": "",
+      "cd_linked_table": "",
+      "to_be_cached": 1,
+      "selected": false,
+      "expanded": false
+    }
+  ],
+  "measures": [
+    {
+      "id": 0,
+      "code": "m_amt",
+      "name": "Amount",
+      "operation": "sum",
+      "query_type": "Result",
+      "selected": true
+    },
+    {
+      "id": 1,
+      "code": "m_qt",
+      "name": "Quantity",
+      "operation": "sum",
+      "query_type": "Result",
+      "selected": false
+    }
+  ],
+  "parameters": [
+    {
+      "id": 0,
+      "xmltag": "Market",
+      "name": "Market",
+      "default_value": "0h",
+      "cd_obj": "ptf",
+      "tp": "number",
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "options": [
+        {
+          "id": 0,
+          "cd": "mkt0"
+        },
+        {
+          "id": 1,
+          "cd": "mkt1"
+        },
+        {
+          "id": 2,
+          "cd": "mkt2"
+        },
+        {
+          "id": 3,
+          "cd": "mkt3"
+        },
+        {
+          "id": 4,
+          "cd": "mkt4"
+        },
+        {
+          "id": 5,
+          "cd": "mkt5"
+        },
+        {
+          "id": 6,
+          "cd": "mkt6"
+        },
+        {
+          "id": 7,
+          "cd": "mkt7"
+        },
+        {
+          "id": 8,
+          "cd": "mkt8"
+        },
+        {
+          "id": 9,
+          "cd": "mkt9"
+        },
+        {
+          "id": 10,
+          "cd": "mkt10"
+        },
+        {
+          "id": 11,
+          "cd": "mkt11"
+        },
+        {
+          "id": 12,
+          "cd": "mkt12"
+        },
+        {
+          "id": 13,
+          "cd": "mkt13"
+        },
+        {
+          "id": 14,
+          "cd": "mkt14"
+        },
+        {
+          "id": 15,
+          "cd": "mkt15"
+        },
+        {
+          "id": 16,
+          "cd": "mkt16"
+        },
+        {
+          "id": 17,
+          "cd": "mkt17"
+        },
+        {
+          "id": 18,
+          "cd": "mkt18"
+        },
+        {
+          "id": 19,
+          "cd": "mkt19"
+        }
+      ],
+      "value": 9
+    },
+    {
+      "id": 1,
+      "xmltag": "Currency",
+      "name": "Currency",
+      "default_value": "0h",
+      "cd_obj": "cur",
+      "tp": "number",
+      "id_linked_table": "id",
+      "cd_linked_table": "cd",
+      "options": [
+        {
+          "id": 0,
+          "cd": "cur0"
+        },
+        {
+          "id": 1,
+          "cd": "cur1"
+        },
+        {
+          "id": 2,
+          "cd": "cur2"
+        },
+        {
+          "id": 3,
+          "cd": "cur3"
+        },
+        {
+          "id": 4,
+          "cd": "cur4"
+        },
+        {
+          "id": 5,
+          "cd": "cur5"
+        },
+        {
+          "id": 6,
+          "cd": "cur6"
+        },
+        {
+          "id": 7,
+          "cd": "cur7"
+        },
+        {
+          "id": 8,
+          "cd": "cur8"
+        },
+        {
+          "id": 9,
+          "cd": "cur9"
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 2,
+      "xmltag": "QuantityUnit",
+      "name": "QuantityUnit",
+      "default_value": "0h",
+      "cd_obj": "qtu",
+      "tp": "number",
+      "id_linked_table": "id",
+      "cd_linked_table": "",
+      "options": [
+        {
+          "id": 0,
+          "cd": "qtu0"
+        },
+        {
+          "id": 1,
+          "cd": "qtu1"
+        },
+        {
+          "id": 2,
+          "cd": "qtu2"
+        },
+        {
+          "id": 3,
+          "cd": "qtu3"
+        },
+        {
+          "id": 4,
+          "cd": "qtu4"
+        },
+        {
+          "id": 5,
+          "cd": "qtu5"
+        },
+        {
+          "id": 6,
+          "cd": "qtu6"
+        },
+        {
+          "id": 7,
+          "cd": "qtu7"
+        },
+        {
+          "id": 8,
+          "cd": "qtu8"
+        },
+        {
+          "id": 9,
+          "cd": "qtu9"
+        }
+      ],
+      "value": 4
+    },
+    {
+      "id": 3,
+      "xmltag": "Discounting",
+      "name": "Discounting",
+      "default_value": "0h",
+      "cd_obj": "",
+      "tp": "number",
+      "id_linked_table": "",
+      "cd_linked_table": "",
+      "options": [
+        {
+          "id": 0,
+          "cd": "None"
+        },
+        {
+          "id": 1,
+          "cd": "Discount"
+        },
+        {
+          "id": 2,
+          "cd": "DiscountCapi"
+        }
+      ],
+      "value": 0
+    }
+  ]
+}

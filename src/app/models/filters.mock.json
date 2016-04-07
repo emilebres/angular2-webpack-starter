@@ -1,0 +1,363 @@
+[
+  {
+    "id": 0,
+    "dimcode": "mkt",
+    "dimname": "Market",
+    "type": "in",
+    "options": [
+      {
+        "cd": "mkt0",
+        "id": 0,
+        "checked": false
+      },
+      {
+        "cd": "mkt1",
+        "id": 1,
+        "checked": true
+      },
+      {
+        "cd": "mkt2",
+        "id": 2,
+        "checked": false
+      },
+      {
+        "cd": "mkt3",
+        "id": 3,
+        "checked": true
+      },
+      {
+        "cd": "mkt4",
+        "id": 4,
+        "checked": true
+      },
+      {
+        "cd": "mkt5",
+        "id": 5,
+        "checked": true
+      },
+      {
+        "cd": "mkt6",
+        "id": 6,
+        "checked": false
+      },
+      {
+        "cd": "mkt7",
+        "id": 7,
+        "checked": false
+      },
+      {
+        "cd": "mkt8",
+        "id": 8,
+        "checked": false
+      },
+      {
+        "cd": "mkt9",
+        "id": 9,
+        "checked": false
+      },
+      {
+        "cd": "mkt10",
+        "id": 10,
+        "checked": false
+      },
+      {
+        "cd": "mkt11",
+        "id": 11,
+        "checked": false
+      },
+      {
+        "cd": "mkt12",
+        "id": 12,
+        "checked": false
+      },
+      {
+        "cd": "mkt13",
+        "id": 13,
+        "checked": false
+      },
+      {
+        "cd": "mkt14",
+        "id": 14,
+        "checked": false
+      },
+      {
+        "cd": "mkt15",
+        "id": 15,
+        "checked": false
+      },
+      {
+        "cd": "mkt16",
+        "id": 16,
+        "checked": false
+      },
+      {
+        "cd": "mkt17",
+        "id": 17,
+        "checked": false
+      },
+      {
+        "cd": "mkt18",
+        "id": 18,
+        "checked": false
+      },
+      {
+        "cd": "mkt19",
+        "id": 19,
+        "checked": false
+      }
+    ],
+    "hidden": false,
+    "initialized": true
+  },
+  {
+    "id": 1,
+    "dimcode": "ptf_1",
+    "dimname": "Portfolio 1",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 2,
+    "dimcode": "ptf_2",
+    "dimname": "Portfolio 2",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 3,
+    "dimcode": "ptf_3",
+    "dimname": "Portfolio 3",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 4,
+    "dimcode": "ptf_mkt",
+    "dimname": "Portfolio market",
+    "type": "equal",
+    "options": [
+      {
+        "cd": "mkt0",
+        "id": 0,
+        "checked": false
+      },
+      {
+        "cd": "mkt1",
+        "id": 1,
+        "checked": true
+      },
+      {
+        "cd": "mkt2",
+        "id": 2,
+        "checked": true
+      },
+      {
+        "cd": "mkt3",
+        "id": 3,
+        "checked": false
+      },
+      {
+        "cd": "mkt4",
+        "id": 4,
+        "checked": false
+      },
+      {
+        "cd": "mkt5",
+        "id": 5,
+        "checked": false
+      },
+      {
+        "cd": "mkt6",
+        "id": 6,
+        "checked": false
+      },
+      {
+        "cd": "mkt7",
+        "id": 7,
+        "checked": false
+      },
+      {
+        "cd": "mkt8",
+        "id": 8,
+        "checked": false
+      },
+      {
+        "cd": "mkt9",
+        "id": 9,
+        "checked": false
+      },
+      {
+        "cd": "mkt10",
+        "id": 10,
+        "checked": false
+      },
+      {
+        "cd": "mkt11",
+        "id": 11,
+        "checked": false
+      },
+      {
+        "cd": "mkt12",
+        "id": 12,
+        "checked": false
+      },
+      {
+        "cd": "mkt13",
+        "id": 13,
+        "checked": false
+      },
+      {
+        "cd": "mkt14",
+        "id": 14,
+        "checked": false
+      },
+      {
+        "cd": "mkt15",
+        "id": 15,
+        "checked": false
+      },
+      {
+        "cd": "mkt16",
+        "id": 16,
+        "checked": false
+      },
+      {
+        "cd": "mkt17",
+        "id": 17,
+        "checked": false
+      },
+      {
+        "cd": "mkt18",
+        "id": 18,
+        "checked": false
+      },
+      {
+        "cd": "mkt19",
+        "id": 19,
+        "checked": false
+      }
+    ],
+    "hidden": false,
+    "initialized": true
+  },
+  {
+    "id": 5,
+    "dimcode": "thp",
+    "dimname": "Thirdparty",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 6,
+    "dimcode": "prod",
+    "dimname": "Product",
+    "type": "equal",
+    "options": [
+      {
+        "cd": "prd0",
+        "id": 0,
+        "checked": false
+      },
+      {
+        "cd": "prd1",
+        "id": 1,
+        "checked": false
+      },
+      {
+        "cd": "prd2",
+        "id": 2,
+        "checked": false
+      },
+      {
+        "cd": "prd3",
+        "id": 3,
+        "checked": false
+      },
+      {
+        "cd": "prd4",
+        "id": 4,
+        "checked": false
+      },
+      {
+        "cd": "prd5",
+        "id": 5,
+        "checked": false
+      },
+      {
+        "cd": "prd6",
+        "id": 6,
+        "checked": false
+      },
+      {
+        "cd": "prd7",
+        "id": 7,
+        "checked": false
+      },
+      {
+        "cd": "prd8",
+        "id": 8,
+        "checked": false
+      },
+      {
+        "cd": "prd9",
+        "id": 9,
+        "checked": false
+      }
+    ],
+    "hidden": false,
+    "initialized": true
+  },
+  {
+    "id": 7,
+    "dimcode": "ntw",
+    "dimname": "Network",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 8,
+    "dimcode": "tpo",
+    "dimname": "Trading point",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 9,
+    "dimcode": "cur",
+    "dimname": "Currency",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 10,
+    "dimcode": "tp_dea",
+    "dimname": "Deal type",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  },
+  {
+    "id": 11,
+    "dimcode": "tp_res",
+    "dimname": "Result type",
+    "type": "equal",
+    "options": null,
+    "hidden": true,
+    "initialized": false
+  }
+]

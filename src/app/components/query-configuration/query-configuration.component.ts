@@ -39,6 +39,6 @@ export class QueryConfigurationComponent {
 
 	onCubeSelection(cube){
 		this.storeService.selectCube(cube);
-		cube.parameters.forEach(prm => this.storeService.loadParameterOptions(prm));
+		cube.parameters.forEach(prm => this.storeService.initParameter(prm));
 	}
 }

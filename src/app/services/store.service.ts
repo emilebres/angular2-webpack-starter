@@ -33,7 +33,7 @@ export class StoreService {
 	}
 
 	selectCube(cube: Cube){
-		console.log(`in selectCube for cube ${cube.code}`);
+		// console.log(`in selectCube for cube ${cube.code}`);
 		this.store.dispatch(this.selectedCubeActions.selectCube(cube));
 		this.store.dispatch(this.filtersActions.addFilters(cube));
 	}
@@ -42,9 +42,16 @@ export class StoreService {
 		this.cubesActions.cubes.subscribe(action => this.store.dispatch(action));
 	}
 
-	loadParameterOptions(parameter){
-		this.selectedCubeActions.getParameterOptions(parameter).subscribe(action =>
-			this.store.dispatch(action));
+	initParameter(parameter){
+		if (parameter.tp === 'number'){
+			this.selectedCubeActions.getParameterOptions(parameter).subscribe(action =>{
+				this.store.dispatch(action);
+				// this.initParameterValue(parameter);
+			})
+		}
+		else {
+			// this.initParameterValue(parameter);
+		}
 	}
 
 	toggleDimension(dim){

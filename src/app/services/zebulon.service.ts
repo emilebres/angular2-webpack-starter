@@ -40,7 +40,44 @@ export class ZebulonService {
 		this._ws.send(id + '###' + '(`.z_gw.f.meta;`;`;`)');
 		return this._stream
 			.filter(res => res.id === id)
-			.map(res => res.data);
+			.map(res => res.data)
+			.map(res => this.initCubes(res));
+	}
+
+	initCubes(res){
+		const cubes = res[0];
+		const dimsArray = res[1];
+		const measArray = res[2];
+		const paramsArray = res[3];
+		for (var i = 0; i < cubes.length; i++) {
+			const cube = cubes[i];
+			const dims = dimsArray[i];
+			const meas = measArray[i];
+			const params = paramsArray[i].map(prm => Object.assign({}, prm, { options: [], value: this.convertParamDefaultValue(prm.tp, prm.default_value) }));
+			cube.dimensions = dims;
+			cube.measures = meas;
+			cube.parameters = params;
+		}
+		return cubes;
+	}
+
+	convertParamDefaultValue(type, defValue) {
+		var value;
+		switch (type) {
+			case "date":
+				value = new Date(defValue);
+				break;
+			case "number":
+				value = parseFloat(defValue);
+				break;
+			case "boolean":
+				value = defValue === '0h' ? false : true;
+				break;
+			default:
+				value = defValue;
+				break;
+		};
+		return value;
 	}
 
 	execQuery(query?){
@@ -113,6 +150,7 @@ export class ZebulonService {
 			.filter(res => res.id === id)
 			.map(res => res.data);
 	}
+
 
 	getDimValues(dim: string) {
 		console.log('getting options for '+ dim);

@@ -13,7 +13,7 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     // list of files to exclude
-    exclude: [ ],
+    exclude: ["node_modules"],
 
     // list of files / patterns to load in the browser
     // we are building the test environment in ./spec-bundle.js
@@ -54,7 +54,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
@@ -65,7 +65,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true
+    singleRun: false
   });
 
 };

@@ -53,6 +53,7 @@ export interface Parameter {
 	name: string;
 	tp: string;
 	default_value: any;
+	options?: any;
 	value?: any;
 	cd_obj?: string;
 	id_linked_table?: string;

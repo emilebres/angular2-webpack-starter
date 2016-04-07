@@ -77,7 +77,7 @@ export class QueryFormComponent{
 	}
 
 	onParameterChange(res){
-		this.storeService.changeParameterValue(this.cube.parameters.filter(prm => prm.id === res.prm)[0], res.opt);
+		this.storeService.changeParameterValue(this.cube.parameters.filter(prm => prm.id === res.prm)[0], res.value);
 	}
 
 	// onToggleFilter(event){

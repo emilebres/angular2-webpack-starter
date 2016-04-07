@@ -1,5 +1,4 @@
 import {Injectable} from 'angular2/core';
-import {Store} from '@ngrx/store';
 import {Cube, Dimension, Measure, Parameter, Filter, Query, AppStore} from '../models/objects';
 import {ADD_FILTERS, ADD_FILTER_OPTIONS, TOGGLE_FILTER, TOGGLE_OPTION, CHANGE_TYPE} from '../reducers/filters.reducer';
 import {ZebulonService} from '../services/zebulon.service';
@@ -7,8 +6,7 @@ import {ZebulonService} from '../services/zebulon.service';
 @Injectable()
 export class FiltersActions {
 
-	constructor(private store: Store<AppStore>,
-		private zebulonService: ZebulonService) { }
+	constructor(private zebulonService: ZebulonService) { }
 
 	toogleFilter(filter: Filter){
 		console.log(`toggling filter for ${filter.dimcode}`);

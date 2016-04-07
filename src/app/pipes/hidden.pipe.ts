@@ -4,6 +4,7 @@ import {Pipe} from 'angular2/core';
 	name: 'hidden'
 })
 export class HiddenPipe{
+
 	transform(value){
 		return value.filter(item => !item.hidden);
 	}
