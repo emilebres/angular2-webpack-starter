@@ -10,7 +10,7 @@ import {Cube, Measure} from '../../models/objects';
 })
 export class MeasureFormComponent {
 	@Input() measures: Measure[];
-	@Output() select: EventEmitter<Measure> = new EventEmitter;
+	@Output() select= new EventEmitter<Measure>();
 
 	selected(mea: Measure){
 		this.select.emit(mea);

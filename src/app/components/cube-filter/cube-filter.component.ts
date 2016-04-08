@@ -9,7 +9,7 @@ import {Cube} from '../../models/objects';
 })
 export class CubeFilterComponent {
 	@Input() cubes: Cube[];
-	@Output() selected: EventEmitter<Cube> = new EventEmitter;
+	@Output() selected = new EventEmitter<Cube>();
 
 	// to send a cube at initialisation
 	ngOnChanges() {
