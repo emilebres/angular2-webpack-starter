@@ -1,4 +1,4 @@
-import {Injectable} from 'angular2/core';
+import {Injectable, Inject} from 'angular2/core';
 import {Observable} from "rxjs/Observable";
 import {isPresent, isString, isArray,isFunction} from 'angular2/src/facade/lang';
 import {Scheduler} from "rxjs/Rx";
@@ -219,7 +219,7 @@ export class $WebSocket  {
 
 
 
-}
+};
 
 export interface WebSocketConfig {
     initialTimeout:number;

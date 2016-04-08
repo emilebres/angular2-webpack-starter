@@ -13,7 +13,6 @@ export class CubeFilterComponent {
 
 	// to send a cube at initialisation
 	ngOnChanges() {
-		// console.log('onChanges in CubeFilterComponent');
 		this.cubes.length > 0 ? this.selected.emit(this.cubes[0]) : null;
 	}
 

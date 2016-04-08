@@ -15,8 +15,8 @@ export class CubesActions {
 
 	addCubes(cubes: Cube[]) {
 		cubes.map(cube => {
-			cube.dimensions.map(dim => Object.assign({}, dim, { selected: false, expanded: false }));
-			cube.measures.map(mea => Object.assign({}, mea, { selected: false }));
+			cube.dimensions = cube.dimensions.map(dim => Object.assign({}, dim, { selected: false, expanded: false }));
+			cube.measures = cube.measures.map(mea => Object.assign({}, mea, { selected: false }));
 			return cube;
 		});
 		return { type: ADD_CUBES, payload: cubes };

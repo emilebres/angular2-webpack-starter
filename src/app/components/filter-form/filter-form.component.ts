@@ -18,8 +18,6 @@ import {FilterComponent} from './filter/filter.component';
 })
 export class FilterFormComponent {
 	@Input() filters: Filter[];
-	@Output() typeChange = new EventEmitter;
-	@Output() optionCheck = new EventEmitter;
 	constructor(
 		private zebulonService: ZebulonService,
 		private storeService: StoreService){}
@@ -29,7 +27,6 @@ export class FilterFormComponent {
 	}
 
 	onTypeChange([filter, type]){
-		// console.log('onFilterChange in FilterFormComponent');
 		this.storeService.changeFilterType(filter, type);
 	}
 

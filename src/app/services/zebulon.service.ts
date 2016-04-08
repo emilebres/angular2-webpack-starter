@@ -51,9 +51,11 @@ export class ZebulonService {
 		const paramsArray = res[3];
 		for (var i = 0; i < cubes.length; i++) {
 			const cube = cubes[i];
-			const dims = dimsArray[i];
-			const meas = measArray[i];
-			const params = paramsArray[i].map(prm => Object.assign({}, prm, { options: [], value: this.convertParamDefaultValue(prm.tp, prm.default_value) }));
+			const dims = dimsArray[i].map(dim => ({id: dim.id, code: dim.code, name: dim.name, id_fth:dim.id_fth}));
+			const meas = measArray[i].map(mea => ({ id: mea.id, code: mea.code, name: mea.name, operation: mea.operation }));
+			const params = paramsArray[i]
+				.map(prm => Object.assign({}, prm, {value: this.convertParamDefaultValue(prm.tp, prm.default_value) }))
+				.map(prm => ({ id: prm.id, name: prm.name, tp: prm.tp, options: [], value: prm.value }));
 			cube.dimensions = dims;
 			cube.measures = meas;
 			cube.parameters = params;

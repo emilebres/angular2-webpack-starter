@@ -30,13 +30,13 @@ export interface Dimension {
 	code: string;
 	name: string;
 	id_fth?: number;
-	id_root: number;
-	lv: number;
-	tp: string;
-	children?: Dimension[];
-	selected: boolean;
-	expanded: boolean;
-	filter?: Filter;
+	// id_root: number;
+	// lv: number;
+	// tp: string;
+	// children?: Dimension[];
+	selected?: boolean;
+	expanded?: boolean;
+	// filter?: Filter;
 }
 
 export interface Measure {
@@ -44,21 +44,21 @@ export interface Measure {
 	code: string;
 	name: string;
 	operation: string;
-	query_type?: string;
-	selected: boolean;
+	// query_type?: string;
+	selected?: boolean;
 }
 
 export interface Parameter {
 	id: number;
 	name: string;
 	tp: string;
-	default_value: any;
+	// default_value: any;
 	options?: any;
 	value?: any;
-	cd_obj?: string;
-	id_linked_table?: string;
-	cd_linked_table?: string;
-	xmltag?: string;
+	// cd_obj?: string;
+	// id_linked_table?: string;
+	// cd_linked_table?: string;
+	// xmltag?: string;
 }
 
 export interface Query {
