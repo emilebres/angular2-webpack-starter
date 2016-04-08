@@ -16,7 +16,7 @@ export class StoreService {
 
 	cubes: Observable<Cube[]>;
 	selectedCube: Observable<Cube>;
-	filters: Observable<Filter>;
+	filters: Observable<Filter[]>;
 	grid: Observable<any>;
 
 	constructor(
@@ -26,9 +26,9 @@ export class StoreService {
 		private filtersActions: FiltersActions,
 		private gridActions: GridActions
 	) {
-		this.cubes = store.select('cubes');
-		this.selectedCube = store.select('selectedCube');
-		this.filters = store.select('filters');
+		this.cubes = store.select<Cube[]>('cubes');
+		this.selectedCube = store.select<Cube>('selectedCube');
+		this.filters = store.select<Filter[]>('filters');
 		this.grid = store.select('grid');
 	}
 
@@ -46,11 +46,7 @@ export class StoreService {
 		if (parameter.tp === 'number'){
 			this.selectedCubeActions.getParameterOptions(parameter).subscribe(action =>{
 				this.store.dispatch(action);
-				// this.initParameterValue(parameter);
 			})
-		}
-		else {
-			// this.initParameterValue(parameter);
 		}
 	}
 

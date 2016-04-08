@@ -18,7 +18,7 @@ import {QueryFormComponent} from '../query-form/query-form.component';
 export class QueryConfigurationComponent {
 	cubes: Observable<Cube[]>;
 	cube: Observable<Cube>;
-	filters: Observable<Filter>
+	filters: Observable<Filter[]>
 	@Output() confSubmit: EventEmitter<any> = new EventEmitter();
 
 	constructor(private zebulonService: ZebulonService,
